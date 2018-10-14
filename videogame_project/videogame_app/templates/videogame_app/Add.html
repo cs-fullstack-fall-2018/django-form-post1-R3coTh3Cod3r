@@ -1,0 +1,15 @@
+{ % extends 'videogame_app/base.html' %}
+{% block manager %}
+
+<div class="post">
+    {% if post.currentdate %}
+</div>
+<div class="date">
+    {{post.currentdate}}
+</div>
+{% endif %}
+{#<a class="btn btn-default" href="{% 'post_edit' pk=post.pk %}"></a><span class="gylphicon glyphicon-calendar"></span></a>#}
+<h1>{{post.name}}</h1>
+<p>{{post.genre|linebreaksbr}}</p>
+</div>
+{% endblock %}
